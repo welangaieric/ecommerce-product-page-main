@@ -74,12 +74,8 @@ addcartBtn.addEventListener('click',()=>{
     </div>
 </div>
 <button type="button" class="checkBtn"> Checkout</button>`
-    document.querySelector('.alerter').style.display='flex'
-
-    setTimeout(()=>{
-        document.querySelector('.alerter').style.display='none'
-
-    },4000)
+ //delete item
+   
 
 
   }
@@ -112,37 +108,6 @@ addcartBtn.addEventListener('click',()=>{
 
 })
 
-// opening lightbox
-
-let lightbox = document.querySelector('.lightbox-open')
-let lightboxClass = document.querySelector('.lightbox')
-lightbox.addEventListener('click',()=>{
-    lightboxClass.classList.add('lightbox-show')
-    lightboxClass.classList.remove('lightbox-hide')
-
-
-    
-})
-// closing lightbox
-
-let lightboxclose = document.querySelector('.close-btn')
-lightboxclose.addEventListener('click',()=>{
-    lightboxClass.classList.add('lightbox-hide')
-    lightboxClass.classList.remove('lightbox-show')
-
-    
-})
-// preloader
-let preloader = document.querySelector('.preloader')
-window.addEventListener('DOMContentLoaded',()=>{
-    setTimeout(() => {
-        preloader.style.display = 'none'
-        document.querySelector('.main').style.display = 'flex'
-    
-    
-    },1000)
-})
-;
 
 
 
